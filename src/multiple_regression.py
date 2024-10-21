@@ -213,7 +213,7 @@ inputs = [
 ]
 
 
-def predcit(x, beta):
+def predict(x, beta):
     """assumes that the first element of c is 1"""
     return dot(x, beta)
 
@@ -222,7 +222,7 @@ def predcit(x, beta):
 
 
 def error(x, y, beta):
-    return predcit(x, beta) - y
+    return predict(x, beta) - y
 
 
 def squared_error(x, y, beta):
